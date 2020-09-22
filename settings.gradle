@@ -1,2 +1,0 @@
-include ':oppo'
-rootProject.name = "My Application"
