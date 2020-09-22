@@ -18,8 +18,9 @@ artifacts {
 uploadArchives {
     repositories {
         mavenDeployer {
+            def deployPath = file("C:\\Users\\pc\\AndroidStudioProjects\\MyApplication2")
             //!!!!!!!!!!!!!!!!!!!!!!!!!!这里配置上传到maven仓库后的  groupId、artifactId、version
-            repository(url: "file://xxx")
+            repository(url: "file://${deployPath.absolutePath}")
             pom.version = "2.1.0"
             pom.artifactId = "msp-push"
             pom.groupId = "oppo_com.heytap.wanwei"
